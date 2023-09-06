@@ -1,0 +1,17 @@
+@mixin space-x($space) {
+  > * + * {
+    margin-left: $space;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+
+.navList {
+  display: flex;
+  @include space-x(15px);
+  list-style-type: none;
+}
