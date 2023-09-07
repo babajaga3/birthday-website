@@ -12,6 +12,6 @@
 
 .navList {
   display: flex;
-  @include space-x(15px);
   list-style-type: none;
+  @include space-x(15px);
 }
