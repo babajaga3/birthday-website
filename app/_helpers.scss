@@ -1,0 +1,7 @@
+@mixin space-x($space) {
+  > * + * {
+    margin-left: $space;
+  }
+}
+
+
