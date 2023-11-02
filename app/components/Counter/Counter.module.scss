@@ -1,0 +1,32 @@
+@use "../../helpers.scss" as *;
+
+@mixin digit {
+  font-family: "Arial Black", Gadget, sans-serif;
+  background-color: black;
+  padding: 60px 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.clockContainer {
+  display: flex;
+  flex-direction: row;
+
+  @include space-x(30px);
+}
+
+.days {
+  @include digit;
+}
+
+.hours {
+  @include digit;
+}
+
+.minutes {
+  @include digit;
+}
+
+.seconds {
+  @include digit;
+}
